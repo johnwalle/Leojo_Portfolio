@@ -32,11 +32,11 @@ const Navbar = () => {
         setShowMenu(!showMenu);
     };
 
-    const navClassName = `fixed z-[2] p-4 w-full`;
+    const navClassName = `fixed z-[1] p-4 w-full ${scrollUp ? 'scrollup' : ''}`;
 
 
     return (
-        <nav className={navClassName}>
+        <nav className={navClassName} >
             <div className='px-6'>
                 <div className="flex items-center justify-between h-16">
                     <div className="flex items-center">
