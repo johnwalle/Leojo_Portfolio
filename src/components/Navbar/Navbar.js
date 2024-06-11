@@ -44,7 +44,7 @@ const Navbar = () => {
                         <div className='mt-3'>
                             <Link
                             >
-                                <div className='p-14 '>
+                                <div className='pt-6'>
                                     <img src={logo} className="image h-32 w-32 h object-cover rounded-full shadow-md hover:scale-105 transition-transform duration-300" />
                                 </div>
                             </Link>
@@ -154,7 +154,7 @@ const Navbar = () => {
                         </div>
 
                         <div className="hidden md:block">
-                            <div className="mx-24 flex items-center md:ml-6">
+                            <div className="mx-12 flex items-center md:ml-6">
                                 <Link
                                     className='navigation-font'
                                 >
@@ -162,8 +162,14 @@ const Navbar = () => {
                                 </Link>
                                 <Link
                                     className='navigation-font'
+                                    to='#about'
                                 >
                                     About
+                                </Link>
+                                <Link
+                                    className='navigation-font'
+                                >
+                                    Skills
                                 </Link>
                                 <Link
                                     className='navigation-font'

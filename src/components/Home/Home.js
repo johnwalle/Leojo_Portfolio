@@ -3,7 +3,7 @@ import Leojo from '../../assets/leojo_photo.jpg'
 
 const Home = () => {
     return (
-        <div className="pt-36  grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="Home-container  pt-36  grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="text-white flex flex-col pl-10 items-center justify-center">
                 <div className='satisfy-regular flex items-center '>
                     <p className='p-2'> Hello There!</p>
