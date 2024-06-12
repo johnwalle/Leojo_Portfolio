@@ -7,7 +7,7 @@ import softSkills from '../../assets/Soft skills.gif';
 
 const Skills = () => {
     return (
-        <div className="skills-main-container py-12">
+        <div className="skills-main-container pt-7 pb-24 ">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className='p-6'>
                     <h2 className="text-3xl font-bold text-white skill-heading">Skills</h2>

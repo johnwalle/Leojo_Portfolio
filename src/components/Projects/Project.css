@@ -1,0 +1,364 @@
+.Projects-Button {
+    width: fit-content;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    padding: 5px 20px;
+    gap: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    /* background: linear-gradient(120deg, rgb(150, 86, 199), rgb(98, 47, 138)); */
+    transition: all 0.3s;
+    /* box-shadow: 0px 10px 10px rgba(144, 0, 255, 0.166); */
+
+}
+
+.IconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 35px;
+    position: relative;
+}
+
+.svgBG {
+    width: 65px;
+    height: auto;
+    animation: clockwise 2s linear infinite;
+
+}
+
+.svgFG {
+    width: 9px;
+    height: auto;
+    z-index: 2;
+    position: absolute;
+}
+
+.text {
+    color: rgb(240, 240, 240);
+    font-weight: 800;
+    font-size: 35px;
+}
+
+.Projects-Button:hover .svgFG {
+    animation: clockwise 2s linear infinite;
+}
+
+.Projects-Button:hover .svgBG {
+    animation: anti-clockwise 2s linear infinite;
+}
+
+@keyframes clockwise {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes anti-clockwise {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+/*Top container*/
+
+.project_top_container {
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Cpath fill='none' stroke-width='1' stroke-opacity='0.17' id='a' d='M0-478l-413.96 717h827.92L0-478l-413.96 717h827.92z'/%3E%3C/defs%3E%3Cg style='transform-origin:center'%3E%3Cg transform='' style='transform-origin:center'%3E%3Cg transform='rotate(-76.8 0 0)' style='transform-origin:center'%3E%3Cg transform='translate(1000 750)'%3E%3Cuse stroke='%23FFC01D' href='%23a' transform='rotate(-38.4 0 0) scale(0.616)'/%3E%3Cuse stroke='%23ffbd1c' href='%23a' transform='rotate(-33.6 0 0) scale(0.664)'/%3E%3Cuse stroke='%23ffba1c' href='%23a' transform='rotate(-28.8 0 0) scale(0.712)'/%3E%3Cuse stroke='%23ffb71b' href='%23a' transform='rotate(-24 0 0) scale(0.76)'/%3E%3Cuse stroke='%23ffb41b' href='%23a' transform='rotate(-19.2 0 0) scale(0.808)'/%3E%3Cuse stroke='%23ffb01a' href='%23a' transform='rotate(-14.4 0 0) scale(0.856)'/%3E%3Cuse stroke='%23ffad19' href='%23a' transform='rotate(-9.6 0 0) scale(0.904)'/%3E%3Cuse stroke='%23ffaa19' href='%23a' transform='rotate(-4.8 0 0) scale(0.952)'/%3E%3Cuse stroke='%23ffa618' href='%23a' transform=''/%3E%3Cuse stroke='%23ffa317' href='%23a' transform='rotate(4.8 0 0) scale(1.048)'/%3E%3Cuse stroke='%23ff9f17' href='%23a' transform='rotate(9.6 0 0) scale(1.096)'/%3E%3Cuse stroke='%23ff9b16' href='%23a' transform='rotate(14.4 0 0) scale(1.144)'/%3E%3Cuse stroke='%23ff9715' href='%23a' transform='rotate(19.2 0 0) scale(1.192)'/%3E%3Cuse stroke='%23ff9414' href='%23a' transform='rotate(24 0 0) scale(1.24)'/%3E%3Cuse stroke='%23ff9014' href='%23a' transform='rotate(28.8 0 0) scale(1.288)'/%3E%3Cuse stroke='%23ff8c13' href='%23a' transform='rotate(33.6 0 0) scale(1.336)'/%3E%3Cuse stroke='%23ff8712' href='%23a' transform='rotate(38.4 0 0) scale(1.384)'/%3E%3Cuse stroke='%23ff8311' href='%23a' transform='rotate(43.2 0 0) scale(1.432)'/%3E%3Cuse stroke='%23ff7e10' href='%23a' transform='rotate(48 0 0) scale(1.48)'/%3E%3Cuse stroke='%23ff7a0f' href='%23a' transform='rotate(52.8 0 0) scale(1.528)'/%3E%3Cuse stroke='%23ff750e' href='%23a' transform='rotate(57.6 0 0) scale(1.576)'/%3E%3Cuse stroke='%23ff700d' href='%23a' transform='rotate(62.4 0 0) scale(1.624)'/%3E%3Cuse stroke='%23ff6b0b' href='%23a' transform='rotate(67.2 0 0) scale(1.672)'/%3E%3Cuse stroke='%23ff650a' href='%23a' transform='rotate(72 0 0) scale(1.72)'/%3E%3Cuse stroke='%23FF5F08' href='%23a' transform='rotate(76.8 0 0) scale(1.768)'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    /* background-attachment: fixed;
+    background-size: cover; */
+
+}
+
+/* .project_sub_container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+} */
+
+
+
+
+/*Image container*/
+
+.img__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 300px;
+    background-image: linear-gradient(to top, #210c93, #0d117a, #011160, #010e47, #07052e);
+    box-shadow: rgba(0, 0, 0, 0.24) -20px 30px 10px;
+    transform-style: preserve-3d;
+    transform: perspective(400px) rotateX(60deg) rotateZ(-30deg);
+    border-radius: 10px;
+    transition: transform 2s;
+}
+
+.img__card:hover {
+    transform: rotateY(19deg);
+}
+
+
+
+
+
+/* Project card container */
+
+.project_card_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+}
+
+.card__content {
+
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+
+
+}
+
+
+
+.card__title {
+    margin: 0;
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+
+
+.card__description {
+    margin: 10px 0 10px;
+    font-size: 15px;
+    color: #aaaaaa;
+    line-height: 1.4;
+}
+
+button.livedemo {
+    position: relative;
+    width: 10em;
+    height: 3.5em;
+    outline: none;
+    transition: 0.1s;
+    background-color: transparent;
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ddebf0;
+  }
+  
+  #clip {
+    --color: #2761c3;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border: 5px double var(--color);
+    box-shadow: inset 0px 0px 15px #195480;
+    -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  }
+  
+  .arrow {
+    position: absolute;
+    transition: 0.2s;
+    background-color: #2761c3;
+    top: 35%;
+    width: 11%;
+    height: 30%;
+  }
+  
+  #leftArrow {
+    left: -13.5%;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 50%);
+  }
+  
+  #rightArrow {
+    -webkit-clip-path: polygon(100% 49%, 0 0, 0 100%);
+    left: 102%;
+  }
+  
+  button.livedemo:hover #rightArrow {
+    background-color: #27c39f;
+    left: -15%;
+    animation: 0.6s ease-in-out both infinite alternate rightArrow8;
+  }
+  
+  button.livedemo:hover #leftArrow {
+    background-color: #27c39f;
+    left: 103%;
+    animation: 0.6s ease-in-out both infinite alternate leftArrow8;
+  }
+  
+  .corner {
+    position: absolute;
+    width: 4em;
+    height: 4em;
+    background-color: #2761c3;
+    box-shadow: inset 1px 1px 8px #2781c3;
+    transform: scale(1) rotate(45deg);
+    transition: 0.2s;
+  }
+  
+  #rightTop {
+    top: -1.98em;
+    left: 91%;
+  }
+  
+  #leftTop {
+    top: -1.96em;
+    left: -3.0em;
+  }
+  
+  #leftBottom {
+    top: 2.10em;
+    left: -2.15em;
+  }
+  
+  #rightBottom {
+    top: 45%;
+    left: 88%;
+  }
+  
+  button.livedemo:hover #leftTop {
+    animation: 0.1s ease-in-out 0.05s both changeColor8,
+    0.2s linear 0.4s both lightEffect8;
+  }
+  
+  button.livedemo:hover #rightTop {
+    animation: 0.1s ease-in-out 0.15s both changeColor8,
+    0.2s linear 0.4s both lightEffect8;
+  }
+  
+  button.livedemo:hover #rightBottom {
+    animation: 0.1s ease-in-out 0.25s both changeColor8,
+    0.2s linear 0.4s both lightEffect8;
+  }
+  
+  button.livedemo:hover #leftBottom {
+    animation: 0.1s ease-in-out 0.35s both changeColor8,
+    0.2s linear 0.4s both lightEffect8;
+  }
+  
+  button.livedemo:hover .corner {
+    transform: scale(1.25) rotate(45deg);
+  }
+  
+  button.livedemo:hover #clip {
+    animation: 0.2s ease-in-out 0.55s both greenLight8;
+    --color: #27c39f;
+  }
+  
+  @keyframes changeColor8 {
+    from {
+      background-color: #2781c3;
+    }
+  
+    to {
+      background-color: #27c39f;
+    }
+  }
+  
+  @keyframes lightEffect8 {
+    from {
+      box-shadow: 1px 1px 5px #27c39f;
+    }
+  
+    to {
+      box-shadow: 0 0 2px #27c39f;
+    }
+  }
+  
+  @keyframes greenLight8 {
+    from {
+    }
+  
+    to {
+      box-shadow: inset 0px 0px 32px #27c39f;
+    }
+  }
+  
+  @keyframes leftArrow8 {
+    from {
+      transform: translate(0px);
+    }
+  
+    to {
+      transform: translateX(10px);
+    }
+  }
+  
+  @keyframes rightArrow8 {
+    from {
+      transform: translate(0px);
+    }
+  
+    to {
+      transform: translateX(-10px);
+    }
+  }
+  
+  
+ 
+
+
+
+  .getcode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+    padding: 10px 15px;
+    gap: 12px;
+    background-color: #060000;
+    outline: 0.5px #f5f5f5 solid;
+    outline-offset: -3px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .getcode .text {
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    transition: 400ms;
+  }
+  
+  .getcode svg path {
+    transition: 400ms;
+  }
+  
+  .getcode:hover {
+    background-color: white;
+    border: 0.5px #000000 solid;
+
+
+  }
+  
+  .getcode:hover .text {
+    color: #181717;
+  }
+  
+  .getcode:hover svg path {
+    fill: #181717;
+  }

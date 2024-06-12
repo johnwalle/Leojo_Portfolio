@@ -26,10 +26,10 @@
     width: 100%;
     border-radius: 2rem;
     position: absolute;
-    box-shadow: 0 0 10px 2px rgba(50, 50, 50, 2.5);
+    /* box-shadow: 0 0 10px 2px rgba(50, 50, 50, 2.5); */
     backface-visibility: hidden;
     color: aliceblue;
-
+    padding: 5%;
 }
 
 .front,
@@ -81,6 +81,8 @@
     animation: pulse_3011 3s infinite;
 }
 
+
+
 .card-bg {
     position: relative;
     box-sizing: border-box;
@@ -107,7 +109,7 @@ strong {
 
 #text-border {
     position: absolute;
-    top: 16.8rem;
+    top: 15.8rem;
     left: 1.5rem;
     width: 90%;
     height: fit-content;
@@ -339,6 +341,7 @@ strong {
     box-shadow: 0px 10px 10px rgb(73, 70, 92);
     transition: 0.5s;
 }
+
 
 
 .code-editor {

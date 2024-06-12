@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react'
 import './frontSkill.css'
 import reactLogo from '../../../assets/icons8-react-100.png'
