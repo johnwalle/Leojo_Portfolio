@@ -17,7 +17,7 @@ const Home = () => {
                     <p className='text-focus-in oleo-script-regular max-w-xs'>The combination of my passion for design code and interaction web design world.
 
                     </p>
-                    <div class="share text-shadow-drop-center">
+                    <div class="share puff-in-center text-shadow-drop-center">
                         <a class="fb" href="">
                             <svg
                                 class="facebook"
