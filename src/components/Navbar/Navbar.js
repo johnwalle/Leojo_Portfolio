@@ -32,7 +32,7 @@ const Navbar = () => {
         setShowMenu(!showMenu);
     };
 
-    const navClassName = `fixed z-[1] p-4 w-full ${scrollUp ? 'scrollup' : ''}`;
+    const navClassName = `fixed z-50 p-4 w-full ${scrollUp ? 'scrollup' : ''}`;
 
 
     return (
