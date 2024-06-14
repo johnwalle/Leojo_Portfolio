@@ -4,7 +4,7 @@ import Project2 from './Project2/Project2'
 
 const Project = () => {
     return (
-        <div className='project_top_container'>
+        <div  id="project" className='project_top_container'>
             <div className='pl-12 pt-24'>
                 <button class="Projects-Button">
                     <span class="IconContainer">

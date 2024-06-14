@@ -27,6 +27,10 @@ const Navbar = () => {
     }, []);
 
 
+    const menuOff = () => {
+        setShowMenu(false);
+    }
+
 
     const toggleMenu = () => {
         setShowMenu(!showMenu);
@@ -154,34 +158,40 @@ const Navbar = () => {
                         </div>
 
                         <div className="hidden md:block">
+
                             <div className="mx-12 flex items-center md:ml-6">
-                                <Link
+                                <a
                                     className='navigation-font'
+                                    href="/"
                                 >
                                     Home
-                                </Link>
-                                <Link
+                                </a>
+
+                                <a
                                     className='navigation-font'
-                                    to='#about'
+                                    href="#about"
                                 >
                                     About
-                                </Link>
-                                <Link
+                                </a>
+
+                                <a
                                     className='navigation-font'
+                                    href="#skills"
                                 >
                                     Skills
-                                </Link>
-                                <Link
+                                </a>
+                                <a
+                                    href="#project"
                                     className='navigation-font'
                                 >
                                     Projects
-                                </Link>
-                                <Link
+                                </a>
+                                <a
                                     className='navigation-font'
-                                    to="/login"
+                                    href='#contact'
                                 >
                                     Contact
-                                </Link>
+                                </a>
 
                             </div>
                         </div>
@@ -193,29 +203,47 @@ const Navbar = () => {
                 </div>
             </div>
             <div className={`md:hidden ${showMenu ? 'block' : 'hidden'}`}>
-                <div className="flex flex-col px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                    <Link
-                        className='navigation-font'
-                    >
-                        Home
-                    </Link>
-                    <Link
-                        className='navigation-font'
-                    >
-                        About
-                    </Link>
-                    <Link
-                        className='navigation-font'
-                    >
-                        Projects
-                    </Link>
-                    <Link
-                        className='navigation-font'
-                        to="/login"
-                    >
-                        Contact
-                    </Link>
+
+                <div className="flex justify-end flex-col px-2 pt-2 pb-3 sm:px-3">
+                    <div className="flex flex-col justify-center items-end space-y-1 px-5">
+                        <a
+                            onClick={menuOff}
+                            className='navigation-font'
+                            href="/"
+                        >
+                            Home
+                        </a>
+                        <a
+                            onClick={menuOff}
+                            className='navigation-font'
+                            href="#about"
+                        >
+                            About
+                        </a>
+                        <a
+                            onClick={menuOff}
+                            className='navigation-font'
+                            href="#skills"
+                        >
+                            Skills
+                        </a>
+                        <a
+                            onClick={menuOff}
+                            href="#project"
+                            className='navigation-font'
+                        >
+                            Projects
+                        </a>
+                        <a
+                            onClick={menuOff}
+                            className='navigation-font'
+                            href='#contact'
+                        >
+                            Contact
+                        </a>
+                    </div>
                 </div>
+
             </div>
 
         </nav>

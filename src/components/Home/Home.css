@@ -397,16 +397,17 @@ p.oleo-script-regular {
             rgba(41, 172, 225, 1)); */
 }
 
-.share a.fb {
+.share a.ln {
     background: #1266f1;
     top: -5.65em;
-    left: -2.83em;
+    left: -1.2em;
+    width: 120px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
-.share a.tw {
-    background: #28abe1;
+.share a.git {
+    background: #0b0b0b;
     top: -6.55em;
     right: -9.39em;
     -webkit-transition: all 0.3s ease-in-out;
@@ -421,19 +422,19 @@ p.oleo-script-regular {
     transition: all 0.3s ease-in-out;
 }
 
-.share a.wh {
-    background: #25d366;
+.share a.tg {
+    background: #25add3;
     right: -2.81em;
     bottom: 7.5em;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
-.share:hover a.fb {
+.share:hover a.ln {
     top: -0.96em;
 }
 
-.share:hover a.tw {
+.share:hover a.git {
     right: -2.8em;
 }
 
@@ -441,12 +442,16 @@ p.oleo-script-regular {
     left: -2.84em;
 }
 
-.share:hover a.wh {
+.share:hover a.tg {
     bottom: 12.3em;
 }
 
-.facebook {
-    padding-top: 45%;
+.linkdin {
+    padding-top: 35%;
+    color: white;
+    padding-left: 25px;
+    width: 80px;
+    height: 80px;
 }
 
 .instagram {
@@ -454,69 +459,77 @@ p.oleo-script-regular {
     padding-top: 15%;
 }
 
-.whatsapp {
-    padding-left: 15%;
-    padding-top: 15%;
+.telegram {
+    padding-left: 25%;
+    padding-top: 25%;
 }
 
-.twitter {
+.github {
     padding-top: 25%;
     padding-left: 10%;
 }
 
-.fb:hover {
+.ln:hover {
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.5) inset;
 }
 
-.tw:hover {
-    box-shadow: 10px 5px 30px 2px rgba(0, 0, 0, 0.5) inset;
+.git:hover {
+    box-shadow: 10px 5px 30px 2px rgba(103, 103, 103, 0.5) inset;
+
 }
 
 .ins:hover {
     box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5) inset;
 }
 
-.wh:hover {
+.tg:hover {
     box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.5) inset;
 }
 
 
 .puff-in-center {
-	-webkit-animation: puff-in-center 3.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-	        animation: puff-in-center 3.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    -webkit-animation: puff-in-center 3.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    animation: puff-in-center 3.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+#IconChangeColor {
+    color: white;
 }
 
 
- @-webkit-keyframes puff-in-center {
+
+@-webkit-keyframes puff-in-center {
     0% {
-      -webkit-transform: scale(2);
-              transform: scale(2);
-      -webkit-filter: blur(4px);
-              filter: blur(4px);
-      opacity: 0;
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        -webkit-filter: blur(4px);
+        filter: blur(4px);
+        opacity: 0;
     }
+
     100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-filter: blur(0px);
-              filter: blur(0px);
-      opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
     }
-  }
-  @keyframes puff-in-center {
+}
+
+@keyframes puff-in-center {
     0% {
-      -webkit-transform: scale(2);
-              transform: scale(2);
-      -webkit-filter: blur(4px);
-              filter: blur(4px);
-      opacity: 0;
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        -webkit-filter: blur(4px);
+        filter: blur(4px);
+        opacity: 0;
     }
+
     100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-filter: blur(0px);
-              filter: blur(0px);
-      opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
     }
-  }
-  
+}
