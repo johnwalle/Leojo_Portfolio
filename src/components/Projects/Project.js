@@ -1,10 +1,11 @@
 import './Project.css'
 import Project1 from './Project1/Project1'
 import Project2 from './Project2/Project2'
+import { project1, project2, project3, project4 } from './data'
 
 const Project = () => {
     return (
-        <div  id="project" className='project_top_container'>
+        <div id="project" className='project_top_container pt-16'>
             <div className='pl-12 pt-24'>
                 <button class="Projects-Button">
                     <span class="IconContainer">
@@ -133,10 +134,10 @@ const Project = () => {
                 </button>
             </div>
             <div>
-                <Project1 />
-                <Project2 />
-                <Project1 />
-                <Project2 />
+                <Project1 projectDetails={project1} />
+                <Project2 projectDetails={project2} />
+                <Project1 projectDetails={project3} />
+                <Project2 projectDetails={project4} />
 
             </div>
         </div >

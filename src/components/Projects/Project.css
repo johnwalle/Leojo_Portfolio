@@ -100,12 +100,20 @@
     justify-content: center;
     height: 200px;
     width: 300px;
-    background-image: linear-gradient(to top, #210c93, #0d117a, #011160, #010e47, #07052e);
-    box-shadow: rgba(0, 0, 0, 0.24) -20px 30px 10px;
+    
+    /* background-image: linear-gradient(to top, #210c93, #0d117a, #011160, #010e47, #07052e);
+    box-shadow: rgba(0, 0, 0, 0.24) -20px 30px 10px; */
     transform-style: preserve-3d;
     transform: perspective(400px) rotateX(60deg) rotateZ(-30deg);
     border-radius: 10px;
     transition: transform 2s;
+}
+
+
+@media (max-width: 485px) {
+    .img__card {
+        width: 250px;
+    }
 }
 
 .img__card:hover {

@@ -13,7 +13,7 @@ const Home = () => {
                 </div>
                 <div className='text-shadow-pop-left  header-font  py-4  flex flex-col'>
                     <span>I am Yohannes</span>
-                    <span> Web developer</span>
+                    <span>Web developer</span>
                 </div>
                 <div>
                     <p className='text-focus-in oleo-script-regular max-w-xs'>The combination of my passion for design code and interaction web design world.

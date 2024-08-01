@@ -160,38 +160,38 @@ const Navbar = () => {
                         <div className="hidden md:block">
 
                             <div className="mx-12 flex items-center md:ml-6">
-                                <a
+                                <Link
                                     className='navigation-font'
-                                    href="/"
+                                    to="/"
                                 >
                                     Home
-                                </a>
+                                </Link>
 
-                                <a
+                                <Link
                                     className='navigation-font'
-                                    href="#about"
+                                    to="/about-me"
                                 >
                                     About
-                                </a>
+                                </Link>
 
-                                <a
+                                <Link
                                     className='navigation-font'
-                                    href="#skills"
+                                    to="/skills"
                                 >
                                     Skills
-                                </a>
-                                <a
-                                    href="#project"
+                                </Link>
+                                <Link
+                                    to="/projects"
                                     className='navigation-font'
                                 >
                                     Projects
-                                </a>
-                                <a
+                                </Link>
+                                <Link
                                     className='navigation-font'
-                                    href='#contact'
+                                    to='/contact'
                                 >
                                     Contact
-                                </a>
+                                </Link>
 
                             </div>
                         </div>
@@ -206,41 +206,41 @@ const Navbar = () => {
 
                 <div className="flex justify-end flex-col px-2 pt-2 pb-3 sm:px-3">
                     <div className="flex flex-col justify-center items-end space-y-1 px-5">
-                        <a
+                        <Link
                             onClick={menuOff}
                             className='navigation-font'
-                            href="/"
+                            to="/"
                         >
                             Home
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                             onClick={menuOff}
                             className='navigation-font'
-                            href="#about"
+                            to="/about-me"
                         >
                             About
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                             onClick={menuOff}
                             className='navigation-font'
-                            href="#skills"
+                            to="/skills"
                         >
                             Skills
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                             onClick={menuOff}
-                            href="#project"
+                            to="/projects"
                             className='navigation-font'
                         >
                             Projects
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                             onClick={menuOff}
                             className='navigation-font'
-                            href='#contact'
+                            to='/contact'
                         >
                             Contact
-                        </a>
+                        </Link>
                     </div>
                 </div>
 
