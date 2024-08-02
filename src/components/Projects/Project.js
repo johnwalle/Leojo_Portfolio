@@ -5,7 +5,7 @@ import { project1, project2, project3, project4 } from './data'
 
 const Project = () => {
     return (
-        <div id="project" className='project_top_container pt-16'>
+        <div id="project" className='project_top_container pt-16 max-w-full overflow-x-hidden'>
             <div className='pl-12 pt-24'>
                 <button class="Projects-Button">
                     <span class="IconContainer">
@@ -138,9 +138,8 @@ const Project = () => {
                 <Project2 projectDetails={project2} />
                 <Project1 projectDetails={project3} />
                 <Project2 projectDetails={project4} />
-
             </div>
-        </div >
+        </div>
     )
 }
 

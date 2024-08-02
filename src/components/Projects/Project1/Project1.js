@@ -35,7 +35,7 @@ const Project1 = ({ projectDetails }) => {
                         transition={{ duration: 1, delay: 0.2 }}
                         viewport={{ once: true }}
                     >
-                        <div className="card__content p-12">
+                        <div className="card__content">
                             <h3 className="card__title">{project.title}</h3>
                             <p className="card__description">{project.description}</p>
                             <div className="flex p-6 gap-4">

@@ -3,7 +3,7 @@ import { GiCandleFlame } from "react-icons/gi";
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 import './Navbar.css'
-import logo from '../../assets/leojo_logo.png'
+import logo from '../../assets/leojo_logo-removebg-preview.png'
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
@@ -41,12 +41,13 @@ const Navbar = () => {
 
     return (
         <nav className={navClassName} >
-            <div className='px-6'>
+            <div>
                 <div className="flex items-center justify-between h-16">
                     <div className="flex items-center">
 
                         <div className='mt-3'>
                             <Link
+                            to="/"
                             >
                                 <div className='pt-6'>
                                     <img src={logo} className="image h-32 w-32 h object-cover rounded-full shadow-md hover:scale-105 transition-transform duration-300" />
@@ -202,7 +203,7 @@ const Navbar = () => {
 
                 </div>
             </div>
-            <div className={`md:hidden ${showMenu ? 'block' : 'hidden'}`}>
+            <div className={`md:hidden scrollup ${showMenu ? 'block' : 'hidden'}`}>
 
                 <div className="flex justify-end flex-col px-2 pt-2 pb-3 sm:px-3">
                     <div className="flex flex-col justify-center items-end space-y-1 px-5">

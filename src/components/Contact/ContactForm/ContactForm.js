@@ -1,28 +1,51 @@
-import './ContactForm.css'
-
+import './ContactForm.css';
 
 const ContactForm = () => {
     return (
-        <div className="rounded-lg overflow-hidden">
-            <div className="flex justify-center items-center px-6 py-8 sm:px-10 sm:py-10">
+        <div className="form_container">
+            <form
+                className="form"
+                action="https://formspree.io/f/xblroyqd"
+                method="POST"
+            >
+                <div className="input">
+                    <input
+                        required
+                        autoComplete="off"
+                        type="text"
+                        id="name"
+                        name="name"
+                    />
+                    <label htmlFor="name">Name</label>
+                </div>
 
-                <form className="form">
-                    <ul className="wrapper">
+                <div className="input">
+                    <input
+                        required
+                        autoComplete="off"
+                        name="email"
+                        type="email"
+                        id="email"
+                    />
+                    <label htmlFor="email">E-mail</label>
+                </div>
 
-                        <li className="list-item" style={{ '--i': 4 }}><input className="input" type="text" placeholder="Name" required /></li>
-                        <li className="list-item" style={{ '--i': 3 }}><input className="input" type="email" placeholder="E-mail" required name="email" /></li>
-
-                        <li className="message_list list-item" style={{ '--i': 2 }}><textarea className="input message_input" required placeholder="Message" name="message"></textarea></li>
-
-                        <button className="list-item" style={{ '--i': 1 }}>Submit</button>
-                    </ul>
-                </form>
-
-
-
-            </div>
+                <div className="input">
+                    <textarea
+                        required
+                        cols="30"
+                        rows="2"
+                        id="message"
+                        name="message"
+                    ></textarea>
+                    <label htmlFor="message">Message</label>
+                </div>
+                <button type="submit" className="submit-btn">
+                    Send message →
+                </button>
+            </form>
         </div>
-    )
-}
+    );
+};
 
-export default ContactForm
+export default ContactForm;

@@ -5,9 +5,7 @@ import profile from '../../assets/leojo_photo.jpg'
 
 const ContactPage = () => {
     return (
-
-
-
+        
         <div id='contact' className='relative'>
 
             <div className="py-16 top-container">
@@ -62,13 +60,15 @@ const ContactPage = () => {
                 </svg>
 
 
-                <div className="contact_container -top-12 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-60 ">
-                    <div className='py-12'>
+                <div className="contact_container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-60 ">
+                    <div className='py-14'>
                         <button class="Projects-Button">
                             <span class="text">Contact me</span>
                         </button>
                     </div>
-                    <ContactForm />
+                    <div>
+                        <ContactForm />
+                    </div>
                 </div>
 
                 <div className='getin_touch_container flex flex-col justify-center items-start absolute bottom-0 w-full py-4 '>
@@ -127,9 +127,3 @@ const ContactPage = () => {
 
 export default ContactPage;
 
-
-
-
-{/* <div className="flex flex-col items-center  pt-24 left-0 -bottom-12 absolute">
-
-</div> */}
