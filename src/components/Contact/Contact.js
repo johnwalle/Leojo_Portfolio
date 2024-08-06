@@ -5,7 +5,6 @@ import profile from '../../assets/leojo_photo.jpg'
 
 const ContactPage = () => {
     return (
-        
         <div id='contact' className='relative'>
 
             <div className="py-16 top-container">
