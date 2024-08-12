@@ -33,11 +33,11 @@ const project3 = [
 
 const project4 = [
     {
-        title: 'Project Four',
-        description: 'This is the third project in the list.',
-        liveDemo: 'https://example.com/project-three',
-        codeLink: 'https://github.com/example/project-three',
-        image: 'https://via.placeholder.com/1000x563'
+        title: 'Real-Time Chat App',
+        description: 'Stay connected with your friends through our easy-to-use real-time chat. Send messages back and forth and see when each other is typing or has read your messages. The chat updates instantly so you can have natural, flowing conversations',
+        liveDemo: 'https://real-time-chat-app-vert.vercel.app',
+        codeLink: 'https://github.com/johnwalle/Real-Time-ChatApp',
+        image: 'https://res.cloudinary.com/dso7gnmps/image/upload/v1723375302/Screenshot_2024-08-11_142021_tmof5z.png'
     }
 ];
 
