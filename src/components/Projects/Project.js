@@ -1,7 +1,7 @@
 import './Project.css'
 import Project1 from './Project1/Project1'
 import Project2 from './Project2/Project2'
-import { project1, project2, project3, project4 } from './data'
+import { project1, project2, project3 } from './data'
 
 const Project = () => {
     return (
@@ -137,7 +137,7 @@ const Project = () => {
                 <Project1 projectDetails={project1} />
                 <Project2 projectDetails={project2} />
                 <Project1 projectDetails={project3} />
-                <Project2 projectDetails={project4} />
+                {/* <Project2 projectDetails={project4} /> */}
             </div>
         </div>
     )
